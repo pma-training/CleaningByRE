@@ -30,10 +30,10 @@ set maxvar 30000
 *******************************************************************************
 *BEFORE USE THE FOLLOWING NEED TO BE UPDATED:
 *Country/Round/Abbreviations
-global Country KE	 
+global Country US	 
 global Phase Phase1
 global phase 1
-global CCPX KEP1
+global CCPX USP1
 
 *Year of the Survey
 local SurveyYear 2018 
@@ -45,9 +45,9 @@ global year3 2019
 
 ******CSV FILE NAMES ****
 *HHQ CSV File name 
-global HHQcsv KEP1_Household_Questionnaire_v3
+global HHQcsv USP1_Household_Questionnaire_v3
 *FQ CSV File name
-global FQcsv KEP1_Female_Questionnaire_v3
+global FQcsv USP1_Female_Questionnaire_v3
 
 ***If the REs used a second version of the form, update these 
 *If they did not use a second version, DONT UPDATE 
@@ -70,10 +70,10 @@ global GeoID_SH "structure household"
 
 *Rename level1 variable to the geographic highest level, level2 second level
 *done in the final data cleaning before dropping other geographic identifiers
-global level1name county
-global level2name district
-global level3name zone
-global level4name location
+global level1name state
+global level2name county
+global level3name precinct
+global level4name 
 
 *Number of households selected per EA
 global EAtake=35
@@ -81,10 +81,10 @@ global EAtake=35
 **** DIRECTORIES****
 
 **Global directory for the dropbox where the csv files are originally stored
-global csvdir "C:\Users\annro\PMA\Data_Not_Shared\Kenya\Test_KEP1"
+global csvdir "C:\Users\annro\Dropbox (Gates Institute)\USA\PMADataManagement_USA\Phase1\Data"
 
 **Create a global data directory - NEVER DROPBOX
-global datadir "C:\Users\annro\PMA\Data_Not_Shared\Kenya\Test_KEP1"
+global datadir "C:\Users\annro\PMA\Data_Not_Shared\USA\Phase1"
 
 **Create a global do file directory
 **Should be your GitKraken working directory for the HHQFQ_Cleaning-Monitoring Repository
